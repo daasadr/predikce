@@ -1,0 +1,12 @@
+dist
+node_modules
+.beads
+.claude
+.agents
+.codex
+.cursor
+openspec
+out
+data
+*.md
+package-lock.json

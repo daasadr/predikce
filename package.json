@@ -1,0 +1,39 @@
+{
+  "name": "freshpoint-weekly-forecaster",
+  "version": "1.0.0",
+  "description": "Univerzální týdenní prediktor prodejů s REST API (FreshPoint vstupní úkol)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "backtest": "tsx scripts/backtest.ts",
+    "evaluate": "tsx scripts/evaluate.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.12.7",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^20.19.43",
+    "eslint": "^10.13.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.0",
+    "vitest": "^4.1.12"
+  },
+  "overrides": {
+    "vite": "^7.3.7"
+  }
+}

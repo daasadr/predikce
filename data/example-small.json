@@ -1,0 +1,8 @@
+{
+  "params": [{ "name": "horizon_weeks", "value": 2 }],
+  "data": [
+    { "timestamp": "2021-01-04", "value": 100 },
+    { "timestamp": "2021-01-11", "value": 110 },
+    { "timestamp": "2021-01-18", "value": 120 }
+  ]
+}
